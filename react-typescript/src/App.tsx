@@ -3,6 +3,8 @@ import './App.css';
 import Button from './components/Button';
 import Container from './components/Container';
 import Input from './components/Input';
+import LoggedIn from './components/state/LoggedIn';
+import LoggedInTwo from './components/state/LoggedInTwo';
 // import Heading from './components/Heading';
 // import Oscar from './components/Oscar';
 // import Status from './components/Status';
@@ -47,7 +49,9 @@ function App() {
      }}/> */}
       
      {/* <Input value='' handleChange={(event)=> console.log(event.nativeEvent.isTrusted.valueOf)}/> */}
-     <Container styles={{padding : '0rem' , fontSize : '3rem' ,color : 'red' , border : 'solid gray 2px'}}/>
+     {/* <Container styles={{padding : '0rem' , fontSize : '3rem' ,color : 'red' , border : 'solid gray 2px'}}/> */}
+     {/* <LoggedIn /> */}
+     <LoggedInTwo />
 
     </div>
   );
