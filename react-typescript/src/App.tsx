@@ -1,7 +1,10 @@
 
 import './App.css';
-import Heading from './components/Heading';
-import Oscar from './components/Oscar';
+import Button from './components/Button';
+import Container from './components/Container';
+import Input from './components/Input';
+// import Heading from './components/Heading';
+// import Oscar from './components/Oscar';
 // import Status from './components/Status';
 // import PersonList from './components/PersonList';
 // import { Person } from './components/Person';
@@ -34,11 +37,17 @@ function App() {
      {/* <Person name={person}/> */}
      {/* <PersonList names={personList} /> */}
      {/* <Status status='error'/> */}
-     <Heading>Place holder Text</Heading>
+     {/* <Heading>Place holder Text</Heading>
 
      <Oscar>
       <Heading>Oscar goes to Ronaldo</Heading>
-     </Oscar>
+     </Oscar> */}
+     {/* <Button handleClick={(e,id)=>{
+      console.log('button clicked',e,id)
+     }}/> */}
+      
+     {/* <Input value='' handleChange={(event)=> console.log(event.nativeEvent.isTrusted.valueOf)}/> */}
+     <Container styles={{padding : '0rem' , fontSize : '3rem' ,color : 'red' , border : 'solid gray 2px'}}/>
 
     </div>
   );
