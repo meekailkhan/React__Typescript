@@ -3,6 +3,7 @@ import './App.css';
 import Button from './components/Button';
 import Container from './components/Container';
 import Input from './components/Input';
+import Counter from './components/state/Counter';
 import LoggedIn from './components/state/LoggedIn';
 import LoggedInTwo from './components/state/LoggedInTwo';
 // import Heading from './components/Heading';
@@ -50,8 +51,9 @@ function App() {
       
      {/* <Input value='' handleChange={(event)=> console.log(event.nativeEvent.isTrusted.valueOf)}/> */}
      {/* <Container styles={{padding : '0rem' , fontSize : '3rem' ,color : 'red' , border : 'solid gray 2px'}}/> */}
+     {/* <LoggedInTwo /> */}
      {/* <LoggedIn /> */}
-     <LoggedInTwo />
+     <Counter />
 
     </div>
   );
