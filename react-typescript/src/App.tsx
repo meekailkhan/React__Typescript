@@ -3,9 +3,14 @@ import './App.css';
 import Button from './components/Button';
 import Container from './components/Container';
 import Input from './components/Input';
+import Box from './components/state/Box';
 import Counter from './components/state/Counter';
 import LoggedIn from './components/state/LoggedIn';
 import LoggedInTwo from './components/state/LoggedInTwo';
+import { ThemeContext } from './components/state/ThemeContext';
+import User from './components/state/User';
+import { UserContextProvider } from './components/state/UserContext';
+import { theme } from './components/state/theme';
 // import Heading from './components/Heading';
 // import Oscar from './components/Oscar';
 // import Status from './components/Status';
@@ -53,7 +58,14 @@ function App() {
      {/* <Container styles={{padding : '0rem' , fontSize : '3rem' ,color : 'red' , border : 'solid gray 2px'}}/> */}
      {/* <LoggedInTwo /> */}
      {/* <LoggedIn /> */}
-     <Counter />
+     {/* <Counter /> */}
+
+     {/* <ThemeContext.Provider value={theme}>
+      <Box/>
+     </ThemeContext.Provider> */}
+     <UserContextProvider>
+      <User/>
+     </UserContextProvider>
 
     </div>
   );
