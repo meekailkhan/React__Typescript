@@ -1,5 +1,7 @@
 
 import './App.css';
+import Private from './auth/Private';
+import Profile from './auth/Profile';
 import Button from './components/Button';
 import Container from './components/Container';
 import Input from './components/Input';
@@ -63,9 +65,11 @@ function App() {
      {/* <ThemeContext.Provider value={theme}>
       <Box/>
      </ThemeContext.Provider> */}
-     <UserContextProvider>
+     {/* <UserContextProvider>
       <User/>
-     </UserContextProvider>
+     </UserContextProvider> */}
+
+     <Private isLoggedIn={false} Component={Profile}/>
 
     </div>
   );
