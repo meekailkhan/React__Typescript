@@ -1,9 +1,9 @@
-type ListProps = {
-    items : string[]
-    onClick : (value : string) => void
+type ListProps<T> = {
+    items : T[]
+    onClick : (value : T) => void
 }
 
-function List({items,onClick} : ListProps) {
+function List<T extends number | string >({items,onClick} : ListProps<T>) {
   return (
     <div>
       <h2>List Of Items</h2>

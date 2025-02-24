@@ -13,6 +13,7 @@ import { ThemeContext } from './components/state/ThemeContext';
 import User from './components/state/User';
 import { UserContextProvider } from './components/state/UserContext';
 import { theme } from './components/state/theme';
+import List from './generic/List';
 // import Heading from './components/Heading';
 // import Oscar from './components/Oscar';
 // import Status from './components/Status';
@@ -69,7 +70,9 @@ function App() {
       <User/>
      </UserContextProvider> */}
 
-     <Private isLoggedIn={false} Component={Profile}/>
+     {/* <Private isLoggedIn={false} Component={Profile}/> */}
+
+     <List items={[1,2,3,4]} onClick={(item) => console.log(item)}/>
 
     </div>
   );
