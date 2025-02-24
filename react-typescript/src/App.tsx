@@ -5,6 +5,7 @@ import Profile from './auth/Profile';
 import Button from './components/Button';
 import Container from './components/Container';
 import Input from './components/Input';
+import Toast from './components/Toast';
 import Box from './components/state/Box';
 import Counter from './components/state/Counter';
 import LoggedIn from './components/state/LoggedIn';
@@ -75,7 +76,9 @@ function App() {
 
      {/* <List items={[1,2,3,4]} onClick={(item) => console.log(item)}/> */}
 
-     <RandomNumber value={10} isPossitive />
+     {/* <RandomNumber value={10} isPossitive /> */}
+
+     <Toast position='center-bottom'/>
 
     </div>
   );
