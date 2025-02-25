@@ -15,6 +15,8 @@ import User from './components/state/User';
 import { UserContextProvider } from './components/state/UserContext';
 import { theme } from './components/state/theme';
 import List from './generic/List';
+import Test from './generic/Test';
+import CustomButton from './html/CustomButton';
 import RandomNumber from './restricting/RandomNumber';
 // import Heading from './components/Heading';
 // import Oscar from './components/Oscar';
@@ -78,7 +80,12 @@ function App() {
 
      {/* <RandomNumber value={10} isPossitive /> */}
 
-     <Toast position='center-bottom'/>
+     {/* <Toast position='center-bottom'/> */}
+     {/* <CustomButton variante='primary'>
+        this is div text
+     </CustomButton> */}
+     <Test as='h1' color='primary' size='sm'>this is test props</Test>
+     <Test as='label' htmlFor='' color='secondry' size='md'>this is label</Test>
 
     </div>
   );
