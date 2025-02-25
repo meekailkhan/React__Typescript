@@ -2,7 +2,7 @@
 type TestOwnProps<E extends React.ElementType>  = {
     children : React.ReactNode
     size? : 'sm' | 'md' | 'xl'
-    color? : 'primary' | 'secondry'
+    color? : 'primary' | 'secondry' |'random'
     as? : E
 
 }
